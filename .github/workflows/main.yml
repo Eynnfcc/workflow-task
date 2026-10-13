@@ -8,9 +8,9 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "job 1 completed successfully"
+     - run: echo "job 1 completed successfully"
 
   job2:
     runs-on: ubuntu-latest
     steps:
-        - run: echo " job 2 completed successully "
+      - run: echo " job 2 completed successully "
