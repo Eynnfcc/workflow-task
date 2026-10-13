@@ -2,16 +2,15 @@ name: two dependent jobs
 
 on:
   push:
-  workflow_dispatch:
+    branches: [main]
 
 jobs:
   job1:
-  runs-on: ubuntu-latest
-  steps:
-      - run: echo "job 1 completed successfully"
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "job 1 completed successfully"
 
   job2:
-    needs: job1
     runs-on: ubuntu-latest
     steps:
         - run: echo " job 2 completed successully "
